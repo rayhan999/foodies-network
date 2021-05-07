@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 // import './Header.css';
 
 const Header = () => {
@@ -9,7 +11,7 @@ const Header = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light mb-5 pt-3">
                 <div className="container-fluid">
-                    <h1 class="navbar-brand" style={{ fontWeight: 'bold' }} >City-Wheel</h1>
+                    <h1 class="navbar-brand" style={{ fontWeight: 'bold' }} >Foodies-Network</h1>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon float-end"></span>
                     </button>
@@ -37,6 +39,9 @@ const Header = () => {
                                     <Link class="nav-link active " style={{ color: 'white' }} to="/login">Login</Link>
                                 </li>
                             } */}
+                            {/* <li className="nav-item">
+                                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+                            </li> */}
                         </ul>
 
                     </div>

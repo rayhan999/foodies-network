@@ -1,5 +1,6 @@
 [
     {
+        "restaurantId": 1,
         "restaurantName": "Mad Chef",
         "restaurantLogo": "",
         "restaurantAddress": "Dhaka",
@@ -7,6 +8,7 @@
         "restaurantRating": 4.5,
         "restaurantMenu": [
             {
+                "id": "F101",
                 "name": "Burger",
                 "image": "",
                 "price": 250
@@ -14,6 +16,7 @@
         ]
     },
     {
+        "restaurantId": 2,
         "restaurantName": "Mad Chef",
         "restaurantLogo": "",
         "restaurantAddress": "Dhaka",
@@ -21,6 +24,7 @@
         "restaurantRating": 4.5,
         "restaurantMenu": [
             {
+                "id": "F201",
                 "name": "Burger",
                 "image": "",
                 "price": 250
@@ -28,6 +32,7 @@
         ]
     },
     {
+        "restaurantId": 3,
         "restaurantName": "Mad Chef",
         "restaurantLogo": "",
         "restaurantAddress": "Dhaka",
@@ -35,6 +40,7 @@
         "restaurantRating": 4.5,
         "restaurantMenu": [
             {
+                "id": "F301",
                 "name": "Burger",
                 "image": "",
                 "price": 250
@@ -42,6 +48,7 @@
         ]
     },
     {
+        "restaurantId": 4,
         "restaurantName": "Mad Chef",
         "restaurantLogo": "",
         "restaurantAddress": "Dhaka",
@@ -49,13 +56,21 @@
         "restaurantRating": 4.5,
         "restaurantMenu": [
             {
+                "id": "F401",
                 "name": "Burger",
+                "image": "",
+                "price": 250
+            },
+            {
+                "id": "F402",
+                "name": "Pizza",
                 "image": "",
                 "price": 250
             }
         ]
     },
     {
+        "restaurantId": 5,
         "restaurantName": "Mad Chef",
         "restaurantLogo": "",
         "restaurantAddress": "Dhaka",
@@ -63,6 +78,7 @@
         "restaurantRating": 4.5,
         "restaurantMenu": [
             {
+                "id": "F501",
                 "name": "Burger",
                 "image": "",
                 "price": 250

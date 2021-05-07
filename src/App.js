@@ -10,6 +10,7 @@ import { createContext, useState } from 'react';
 
 import RestaurantList from './components/Homepage/RestaurantList/RestaurantList';
 import Header from './components/Header/Header';
+import RestaurantDetails from './components/Restaurant/RestaurantDetails/RestaurantDetails';
 
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
           <Route path="/home">
             <RestaurantList></RestaurantList>
           </Route>
-
+          <Route path="/restaurant/:id">
+            <RestaurantDetails></RestaurantDetails>
+          </Route>
           {/* <PrivateRoute path="/admin">
 
             <Admin></Admin>

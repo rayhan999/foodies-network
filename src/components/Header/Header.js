@@ -2,11 +2,15 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { UserContext } from '../../App';
 // import './Header.css';
 
 const Header = () => {
     // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     //console.log('Header', loggedInUser);
+    const { value1, value2 } = useContext(UserContext)
+
+    const [cartOpen, setCartOpen] = value2;
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light mb-5 pt-3">
@@ -39,9 +43,9 @@ const Header = () => {
                                     <Link class="nav-link active " style={{ color: 'white' }} to="/login">Login</Link>
                                 </li>
                             } */}
-                            {/* <li className="nav-item">
-                                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                            </li> */}
+                            <li className="nav-item">
+                                <FontAwesomeIcon icon={faShoppingCart} onClick={() => setCartOpen(!cartOpen)}></FontAwesomeIcon>
+                            </li>
                         </ul>
 
                     </div>

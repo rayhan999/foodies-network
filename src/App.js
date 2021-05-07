@@ -11,11 +11,15 @@ import { createContext, useState } from 'react';
 import RestaurantList from './components/Homepage/RestaurantList/RestaurantList';
 import Header from './components/Header/Header';
 import RestaurantDetails from './components/Restaurant/RestaurantDetails/RestaurantDetails';
+import ReviewItems from './components/Review/ReviewItems/ReviewItems';
 
+export const UserContext = createContext();
 
 function App() {
+  const [cart, setCart] = useState([]);
+  const [cartOpen, setCartOpen] = useState(false);
   return (
-    < div className="" >
+    <UserContext.Provider value={{ value1: [cart, setCart], value2: [cartOpen, setCartOpen] }}>
       <Router>
         <Header></Header>
         <Switch>
@@ -25,6 +29,9 @@ function App() {
           </Route>
           <Route path="/home">
             <RestaurantList></RestaurantList>
+          </Route>
+          <Route path="/review">
+            <ReviewItems></ReviewItems>
           </Route>
           <Route path="/restaurant/:id">
             <RestaurantDetails></RestaurantDetails>
@@ -47,7 +54,7 @@ function App() {
         </Switch>
 
       </Router>
-    </div >
+    </UserContext.Provider>
   );
 }
 

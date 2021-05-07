@@ -1,0 +1,72 @@
+[
+    {
+        "restaurantName": "Mad Chef",
+        "restaurantLogo": "",
+        "restaurantAddress": "Dhaka",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantName": "Mad Chef",
+        "restaurantLogo": "",
+        "restaurantAddress": "Dhaka",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantName": "Mad Chef",
+        "restaurantLogo": "",
+        "restaurantAddress": "Dhaka",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantName": "Mad Chef",
+        "restaurantLogo": "",
+        "restaurantAddress": "Dhaka",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantName": "Mad Chef",
+        "restaurantLogo": "",
+        "restaurantAddress": "Dhaka",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    }
+]

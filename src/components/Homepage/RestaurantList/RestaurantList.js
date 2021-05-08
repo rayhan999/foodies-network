@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Restaurant from '../Restaurant/Restaurant';
-import fakeData from '../../../Fakedata/RestaurantList.json';
+import fakeData from '../../../Fakedata/index';
 import Cart from '../Cart/Cart';
 import { getDatabaseCart } from '../../../utilities/databaseManager';
 import { useContext } from 'react';

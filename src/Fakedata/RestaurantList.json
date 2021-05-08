@@ -2,8 +2,8 @@
     {
         "restaurantId": 1,
         "restaurantName": "Mad Chef",
-        "restaurantLogo": "",
-        "restaurantAddress": "Dhaka",
+        "restaurantLogo": "https://i.ibb.co/tBDh1c9/madchef1-800x800.png",
+        "restaurantAddress": "Mirpur,Dhaka, Bangladesh",
         "restaurantDeliveryCost": 30,
         "restaurantRating": 4.5,
         "restaurantMenu": [
@@ -17,9 +17,9 @@
     },
     {
         "restaurantId": 2,
-        "restaurantName": "Mad Chef",
-        "restaurantLogo": "",
-        "restaurantAddress": "Dhaka",
+        "restaurantName": "Sultan's Dine",
+        "restaurantLogo": "https://i.ibb.co/82xJ1TQ/download-1.png",
+        "restaurantAddress": "Mirpur,Dhaka,Bangladesh",
         "restaurantDeliveryCost": 30,
         "restaurantRating": 4.5,
         "restaurantMenu": [
@@ -33,9 +33,9 @@
     },
     {
         "restaurantId": 3,
-        "restaurantName": "Mad Chef",
-        "restaurantLogo": "",
-        "restaurantAddress": "Dhaka",
+        "restaurantName": "Domino's Pizza",
+        "restaurantLogo": "https://i.ibb.co/mTKwzKC/195-1956271-logo-dominos-pizza-png-transparent-png.jpg",
+        "restaurantAddress": "Dhanmondi,Dhaka,Bangladesh",
         "restaurantDeliveryCost": 30,
         "restaurantRating": 4.5,
         "restaurantMenu": [
@@ -49,9 +49,9 @@
     },
     {
         "restaurantId": 4,
-        "restaurantName": "Mad Chef",
-        "restaurantLogo": "",
-        "restaurantAddress": "Dhaka",
+        "restaurantName": "Cheezz",
+        "restaurantLogo": "https://i.ibb.co/DY39k8W/logo.jpg",
+        "restaurantAddress": "Uttara,Dhaka,Bangladesh",
         "restaurantDeliveryCost": 30,
         "restaurantRating": 4.5,
         "restaurantMenu": [
@@ -71,9 +71,73 @@
     },
     {
         "restaurantId": 5,
-        "restaurantName": "Mad Chef",
-        "restaurantLogo": "",
-        "restaurantAddress": "Dhaka",
+        "restaurantName": "Adda Multicusine Restaurant",
+        "restaurantLogo": "https://i.ibb.co/DKpwtP0/download-2.png",
+        "restaurantAddress": "Dhanmondi,Dhaka,Bangladesh",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "id": "F501",
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantId": 6,
+        "restaurantName": "Cafe Euphoria",
+        "restaurantLogo": "https://i.ibb.co/WpPvGr9/images.png",
+        "restaurantAddress": "Dhanmondi,Dhaka,Bangladesh",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "id": "F501",
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantId": 7,
+        "restaurantName": "Tour De Cyclist Cafe",
+        "restaurantLogo": "https://i.ibb.co/XyFrWF4/download.jpg",
+        "restaurantAddress": "Mirpur,Dhaka,Bangladesh",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "id": "F501",
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantId": 8,
+        "restaurantName": "Pizza Hut",
+        "restaurantLogo": "https://i.ibb.co/7ztHzT6/cfdeabd2b571016773f3c68edfbb8262.jpg",
+        "restaurantAddress": "Banani,Dhaka,Bangladesh",
+        "restaurantDeliveryCost": 30,
+        "restaurantRating": 4.5,
+        "restaurantMenu": [
+            {
+                "id": "F501",
+                "name": "Burger",
+                "image": "",
+                "price": 250
+            }
+        ]
+    },
+    {
+        "restaurantId": 9,
+        "restaurantName": "Foodsence Multicusine Restaurant",
+        "restaurantLogo": "https://i.ibb.co/74Ym4kT/foodsense-big.png",
+        "restaurantAddress": "Khilgaon,Dhaka,Bangladesh",
         "restaurantDeliveryCost": 30,
         "restaurantRating": 4.5,
         "restaurantMenu": [

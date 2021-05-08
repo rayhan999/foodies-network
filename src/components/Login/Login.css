@@ -1,6 +1,6 @@
 .loginBtn{
     /* background-color: tomato; */
-    border-radius: 50px;
+    border-radius: 50px !important;
     border:none;
 }
 .socialBtn{

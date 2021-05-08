@@ -19,10 +19,11 @@ export const UserContext = createContext();
 function App() {
   const [cart, setCart] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
+  const [cartLength, setCartLength] = useState(0);
   return (
-    <UserContext.Provider value={{ value1: [cart, setCart], value2: [cartOpen, setCartOpen] }}>
+    <UserContext.Provider value={{ value1: [cart, setCart], value2: [cartOpen, setCartOpen], value3: [cartLength, setCartLength] }}>
       <Router>
-        <Header></Header>
+        {/* <Header></Header> */}
         <Switch>
 
           <Route exact path="/">

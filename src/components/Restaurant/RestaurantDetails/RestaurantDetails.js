@@ -10,26 +10,17 @@ import fakeData from '../../../Fakedata/RestaurantList.json';
 import { addToDatabaseCart, getDatabaseCart } from '../../../utilities/databaseManager';
 import Cart from '../../Homepage/Cart/Cart';
 import FoodItem from '../FoodItem/FoodItem';
+import Header from '../../Header/Header';
 
 const RestaurantDetails = () => {
     const { id } = useParams();
     const [Restaurants, setRestaurants] = useState(fakeData);
 
-    const { value1, value2 } = useContext(UserContext)
+    const { value1, value2, value3 } = useContext(UserContext)
     const [cart, setCart] = value1;
     const [cartOpen, setCartOpen] = value2;
-    // useEffect(() => {
-    //     const savedCart = getDatabaseCart();
-    //     const itemId = Object.keys(savedCart);
-    //     console.log(itemId);
-    //     const previousCart = itemId.map(existingId => {
-    //         const item = fakeData.find(i => i.id === existingId);
-    //         // item.quantity = savedCart[existingId];
-    //         return item;
-    //     })
-    //     setCart(previousCart);
-    // }, [])
-    // console.log(fakeData)
+    const [cartLength, setCartLength] = value3;
+
     const myRestaurant = Restaurants.find(restaurant => restaurant.restaurantId == id);
     // console.log(myRestaurant.restaurantName);
     const [products, setProducts] = useState([]);
@@ -52,28 +43,29 @@ const RestaurantDetails = () => {
             newCart = [...cart, item];
         }
         setCart(newCart);
+        setCartLength(newCart.length)
         // addToDatabaseCart(item.id, count);
     }
     return (
-        <div className="container" >
-            <div class=" d-flex  justify-content-between align-items-center p-5" style={{ overflowX: 'hidden', maxWidth: '100vw' }}>
-                <div className="" >
-                    <h1>{myRestaurant.restaurantName}</h1>
-                    {
-                        myRestaurant.restaurantMenu.map(item => <FoodItem key={item.id} item={item} handleAddProduct={handleAddProduct}></FoodItem>)
-                    }
+        <div>
+            <Header></Header>
+            <div className="container" >
+                <div class=" d-flex  justify-content-between align-items-center p-5" style={{ overflowX: 'hidden', maxWidth: '100vw' }}>
+                    <div className="" >
+                        <h1>{myRestaurant.restaurantName}</h1>
+                        {
+                            myRestaurant.restaurantMenu.map(item => <FoodItem key={item.id} item={item} handleAddProduct={handleAddProduct}></FoodItem>)
+                        }
 
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+
+                            <Cart cart={cart}></Cart>
+
+                        </div>
+                    </div>
                 </div>
-                {
-                    cartOpen ?
-                        <div className="p-5" style={{ position: "absolute", top: "11vh", right: "0", height: "89vh", backgroundColor: "red", transition: "0.5s ease-in-out" }}>
-                            <Cart cart={cart}></Cart>
-                        </div>
-                        :
-                        <div className="p-5 cartClose" style={{ position: "absolute", top: "11vh", right: "-270px", height: "89vh", backgroundColor: "red", transition: "0.5s ease-in-out" }}>
-                            <Cart cart={cart}></Cart>
-                        </div>
-                }
             </div>
         </div>
     );

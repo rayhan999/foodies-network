@@ -38,7 +38,7 @@ const Cart = (props) => {
             </div>
             <div class="modal-footer">
 
-                <button className="btn btn-warning" data-bs-dismiss="modal" onClick={() => history.push('/review')}>Review Order</button>
+                <button className="btn btn-warning" data-bs-dismiss="modal" onClick={() => history.push(`/review`)}>Review Order</button>
 
             </div>
         </div>

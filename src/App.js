@@ -12,6 +12,7 @@ import RestaurantList from './components/Homepage/RestaurantList/RestaurantList'
 import Header from './components/Header/Header';
 import RestaurantDetails from './components/Restaurant/RestaurantDetails/RestaurantDetails';
 import ReviewItems from './components/Review/ReviewItems/ReviewItems';
+import Login from './components/Login/Login';
 
 export const UserContext = createContext();
 
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/home">
             <RestaurantList></RestaurantList>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="/review">
             <ReviewItems></ReviewItems>

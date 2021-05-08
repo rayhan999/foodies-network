@@ -31,10 +31,9 @@ const RestaurantList = () => {
     // }, [])
 
     return (
-        <div className="container d-flex">
-            <div
-                class="row d-flex flex-sm-wrap-reverse flex-xs-wrap-reverse justify-content-between align-items-center p-5">
-                <div className="col-md-9" >
+        <div className="container ">
+            <div class=" d-flex  justify-content-between align-items-center p-5">
+                <div className="" >
                     <h1>{fakeData.length}</h1>
                     <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
                         {
@@ -42,12 +41,33 @@ const RestaurantList = () => {
                         }
                     </div>
                 </div>
-                {
-                    cartOpen &&
-                    <div className="col-md-3">
-                        <Cart cart={cart}></Cart>
+                {/* {
+                    cartOpen ?
+                        <div className="p-5" style={{ position: "absolute", right: "0", height: "100vh", backgroundColor: "red", transition: "0.5s ease-in-out" }}>
+                            <Cart cart={cart}></Cart>
+                        </div>
+                        :
+                        <div className="p-5" style={{ position: "absolute", right: "-270px", height: "100vh", backgroundColor: "red", transition: "0.5s ease-in-out" }}>
+                            <Cart cart={cart}></Cart>
+                        </div>
+                } */}
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <Cart cart={cart}></Cart>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
                     </div>
-                }
+                </div>
 
             </div>
         </div>

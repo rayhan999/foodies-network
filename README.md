@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# Foodies-Network
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple front-end ui for a Food Delivey Company & created by ReactJs.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features ✔
+
+- There is a Navigation bar by which users can navigate one page to another.
+- In the "/" page there is a list of restaurants along with their name,address & logo.
+- Users can see the details & the full menu card along with their respective prices by clicking any of the restaurants.
+- Users can select there favorite food  by clicking "+Add to cart" button.
+- In the navbar, their is a cart icon with the cart length. From that Users can check how many food items they added on their cart.
+- Users can check how many items they added on the cart and what is the total price by clicking on that cart icon.
+- Under the grand total, there is a "Review" button. Users can go to the review page by clicking on that button.
+- In the review page users can see the details of their added items and also the total price.
+- There is a Checkout button which will use for render users to payment gateway page. 
 
 ### `npm start`
 

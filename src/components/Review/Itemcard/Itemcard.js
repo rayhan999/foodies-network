@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { } from "@fortawesome/free-brands-svg-icons";
-import { faTrashAlt, faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Itemcard = (props) => {
 
@@ -25,8 +25,9 @@ const Itemcard = (props) => {
                 <td>
                     <h6>{quantity}</h6>
                 </td>
-                <td><h6>{total}</h6></td>
-                <td><button className="btn btn-warning" onClick={() => props.removeProduct(id)}><FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button></td>
+                <td><h6>{total}</h6>
+                    {/* </td> <td> */}
+                    <button className="btn btn-warning" onClick={() => props.removeProduct(id)}><FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button></td>
             </tr>
 
         </tbody >

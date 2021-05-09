@@ -25,8 +25,8 @@ const RestaurantList = () => {
         <div>
             <Header></Header>
 
-            <div className="container pt-5">
-                <div class=" d-flex  justify-content-between align-items-center p-5">
+            <div className="container pt-5" >
+                <div class=" d-flex  justify-content-between align-items-center pt-5 ">
                     <div className="" >
                         <h2>Nearby Restaurants</h2>
                         <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">

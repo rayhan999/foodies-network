@@ -2,6 +2,8 @@
 
 This is a simple front-end ui for a Food Delivey Company & created by ReactJs.
 
+<img align="center" alt="" src="https://i.ibb.co/VvPgh2s/screencapture-localhost-3000-home-2021-05-09-12-33-15.png" />
+
 ---
 
 ## Features ✔
@@ -26,7 +28,16 @@ This is a simple front-end ui for a Food Delivey Company & created by ReactJs.
 - Then type `npm i` and press ENTER. It'll install all the dependencies I used for this project.
 - After completing the installation , simply type `npm start` . Then the project will aumatically start in 3000 port. it 3000 is already in used, then it'll ask permission to start the project in 3001.
 
-** Or you can check the project in online also. [http://localhost:3000](click_here) to see the deployed version in online.
+**Or you can check the project in online also. [click_here]() to see the deployed version in online.**
+
+---
+
+## Bonus ⚡
+
+- I developed this project in "Visual Studio" code editor and used "ESLint" as linter.
+- All the codes are  easily reusable because codes are splitting into different components.
+- "Under The Hood" webpack is used by create-eract-app command.
+- ES6 terms are used througout the project.
 
 
 ### `npm start`

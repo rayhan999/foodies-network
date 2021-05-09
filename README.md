@@ -17,6 +17,7 @@ This is a simple front-end ui for a Food Delivey Company & created by ReactJs.
 - Under the grand total, there is a "Review" button. Users can go to the review page by clicking on that button.
 - In the review page users can see the details of their added items and also the total price.
 - There is a Checkout button which will use for render users to payment gateway page. 
+- There's also a login page. But authentication system isn't applied. If anyone wants, they can apply firebase authentication easily.
 
 ---
 

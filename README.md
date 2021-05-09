@@ -26,6 +26,8 @@ This is a simple front-end ui for a Food Delivey Company & created by ReactJs.
 - Then type `npm i` and press ENTER. It'll install all the dependencies I used for this project.
 - After completing the installation , simply type `npm start` . Then the project will aumatically start in 3000 port. it 3000 is already in used, then it'll ask permission to start the project in 3001.
 
+** Or you can check the project in online also. [http://localhost:3000](click_here) to see the deployed version in online.
+
 
 ### `npm start`
 

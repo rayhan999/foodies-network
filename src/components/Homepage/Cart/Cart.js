@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { UserContext } from '../../../App';
 
 const Cart = (props) => {
-    const history = useHistory();
+
     const cart = props.cart;
     // console.log(cart);
     const { value1, value2 } = useContext(UserContext)
@@ -26,19 +26,23 @@ const Cart = (props) => {
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Order Summary</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                {
+                    props.isModal &&
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                }
+
             </div>
             <div class="modal-body">
 
                 <p>Items Ordered: {cart.length}</p>
                 <p>Product Price: {formatNumber(total)}</p>
-                <Link to="/review">
-                    <button className="btn btn-warning">Review Order</button>
-                </Link>
+
             </div>
             <div class="modal-footer">
 
-                <button className="btn btn-warning" data-bs-dismiss="modal" onClick={() => history.push(`/review`)}>Review Order</button>
+                {
+                    props.children
+                }
 
             </div>
         </div>

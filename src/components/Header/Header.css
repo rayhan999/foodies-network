@@ -17,7 +17,8 @@ nav{
 }
 
 .navbar-brand{
-    margin-left:70px;
+    margin-left:30px;
+    color: rgb(255, 255, 255) !important;
 }
 .cartIcon{
     width: 100px !important;

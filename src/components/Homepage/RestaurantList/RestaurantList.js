@@ -8,8 +8,10 @@ import { getDatabaseCart } from '../../../utilities/databaseManager';
 import { useContext } from 'react';
 import { UserContext } from '../../../App';
 import Header from '../../Header/Header';
+import { useHistory } from 'react-router';
 
 const RestaurantList = () => {
+    const history = useHistory();
     const [Restaurants, setRestaurants] = useState([]);
     const { value1, value2 } = useContext(UserContext)
     const [cart, setCart] = value1;
@@ -35,10 +37,10 @@ const RestaurantList = () => {
         <div>
             <Header></Header>
 
-            <div className="container ">
+            <div className="container pt-5">
                 <div class=" d-flex  justify-content-between align-items-center p-5">
                     <div className="" >
-                        <h1>{fakeData.length}</h1>
+                        <h2>Nearby Restaurants</h2>
                         <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
                             {
                                 Restaurants.map(restaurant => <Restaurant restaurant={restaurant}></Restaurant>)
@@ -58,7 +60,9 @@ const RestaurantList = () => {
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
 
-                            <Cart cart={cart}></Cart>
+                            <Cart cart={cart} isModal={true}>
+                                <button className="btn btn-warning" data-bs-dismiss="modal" onClick={() => history.push(`/review`)}>Review Order</button>
+                            </Cart>
 
                         </div>
                     </div>

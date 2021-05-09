@@ -1,3 +1,9 @@
-.cartClose{
-    overflow: hidden !important;
+.restaurantLogo{
+    width: 250px;
+    height: 250px !important;
+    border-radius: 50% !important;
+}
+.itemImage{
+    height:200px !important;
+    width: 300px !important;
 }

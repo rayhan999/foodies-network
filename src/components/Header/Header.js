@@ -14,9 +14,9 @@ const Header = () => {
     const [cartLength, setCartLength] = value3;
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light  mb-5 pt-3" style={{ height: "11vh" }}>
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top mb-5 pt-3" style={{ height: "11vh" }}>
                 <div className="container-fluid">
-                    <h1 className="navbar-brand" style={{ fontWeight: 'bold' }} >Foodies-Network</h1>
+                    <Link to="/"><h1 className="navbar-brand" style={{ fontWeight: 'bold' }} >Foodies-Network</h1></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon float-end"></span>
                     </button>

@@ -69,18 +69,20 @@ const Itemcard = (props) => {
 
         <tbody>
             <tr>
-                <th scope="row">1</th>
-                <td>{image}</td>
-                <td>{name}</td>
-                <td><FontAwesomeIcon icon={faMinus} onClick={itemMinus}></FontAwesomeIcon>
+                <th scope="row"><img src={image} alt="" className="img-fluid" style={{ width: '150px', height: '100px' }} /></th>
+
+                <td><h4>{name}</h4></td>
+                <td>
+                    {/* <FontAwesomeIcon icon={faMinus} onClick={itemMinus}></FontAwesomeIcon> */}
                     {/* <span onChange={handleChange}>{qty}</span> */}
 
 
-                    <input name="quantity" placeholder={qty} onChange={handleChange} />
+                    <input name="quantity" value={quantity} onChange={handleChange} />
 
 
 
-                    <FontAwesomeIcon icon={faPlus} onClick={itemPlus}></FontAwesomeIcon></td>
+                    {/* <FontAwesomeIcon icon={faPlus} onClick={itemPlus}></FontAwesomeIcon> */}
+                </td>
                 <td>{total}</td>
                 <td><button className="btn btn-warning" onClick={() => props.removeProduct(id)}><FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button></td>
             </tr>

@@ -18,33 +18,42 @@ const ReviewItems = () => {
         setCartLength(newCart.length);
         // removeFromDatabaseCart(productKey);
     }
-
+    const handleProceedCheckout = () => {
+        //will take to payment gateway with total price
+    }
     return (
         <div>
             <Header></Header>
-            <div className="container">
+            <div className="container pt-5 pb-5">
 
-                <h1>Review</h1>
-                <table class="table text-center">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col"> Image</th>
-                            <th scope="col"> Name</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    {
-                        cart.map(item =>
 
-                            <Itemcard item={item} removeProduct={removeProduct}></Itemcard>
-                        )
-                    }
-                </table>
-                <div>
-                    <Cart cart={cart}></Cart >
+                <h2 className="pt-5">Selected Items</h2>
+                <div className="row">
+                    <div className="col-md-9">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+
+                                    <th scope="col"> Image</th>
+                                    <th scope="col"> Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            {
+                                cart.map(item =>
+
+                                    <Itemcard item={item} removeProduct={removeProduct}></Itemcard>
+                                )
+                            }
+                        </table>
+                    </div>
+                    <div className="col-md-3">
+                        <Cart cart={cart} isModal={false}>
+                            <button onClick={handleProceedCheckout} className="btn btn-success">Proceed To Checkout</button>
+                        </Cart >
+                    </div>
                 </div>
             </div>
         </div >

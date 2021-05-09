@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Restaurant = (props) => {
-    const { restaurantId, restaurantName, restaurantLogo, restaurantAddress, restaurantDeliveryCost, restaurantRating, restaurantMenu } = props.restaurant;
+    const { restaurantId, restaurantName, restaurantLogo, restaurantAddress } = props.restaurant;
     return (
 
 

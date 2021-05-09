@@ -1,16 +1,12 @@
 import React from 'react';
 import '../RestaurantDetails/RestaurantDetails.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const FoodItem = (props) => {
-    // console.log(props);
     const { name, image, price } = props.item;
     return (
         <div>
-            {/* <img src={image} alt="" className="img-fluid" />
-            <h1>{name}</h1>
-            <button className="btn btn-primary"
-                onClick={() => props.handleAddProduct(props.item)}
-            >Add to Cart</button> */}
             <div class="card mb-3 itemCard" >
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -22,7 +18,7 @@ const FoodItem = (props) => {
                             <p class="card-text">Price: {price} BDT</p>
                             <button className="btn btn-primary"
                                 onClick={() => props.handleAddProduct(props.item)}
-                            >Add to Cart</button>
+                            ><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>&nbsp;Add to Cart</button>
                         </div>
                     </div>
                 </div>

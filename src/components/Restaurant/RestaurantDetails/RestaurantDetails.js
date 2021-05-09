@@ -1,32 +1,27 @@
 import React from 'react';
 import { useContext } from 'react';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 import { UserContext } from '../../../App';
 import './RestaurantDetails.css';
-
 import fakeData from '../../../Fakedata/RestaurantList.json';
-import { addToDatabaseCart, getDatabaseCart } from '../../../utilities/databaseManager';
 import Cart from '../../Homepage/Cart/Cart';
 import FoodItem from '../FoodItem/FoodItem';
 import Header from '../../Header/Header';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faMapMarkerAlt, faShippingFast, faUtensils } from "@fortawesome/free-solid-svg-icons";
 
 const RestaurantDetails = () => {
     const history = useHistory();
     const { id } = useParams();
     const [Restaurants, setRestaurants] = useState(fakeData);
 
-    const { value1, value2, value3 } = useContext(UserContext)
+    const { value1, value3 } = useContext(UserContext)
     const [cart, setCart] = value1;
-    const [cartOpen, setCartOpen] = value2;
     const [cartLength, setCartLength] = value3;
 
     const myRestaurant = Restaurants.find(restaurant => restaurant.restaurantId == id);
-    // console.log(myRestaurant.restaurantName);
-    const [products, setProducts] = useState([]);
 
-    const [search, setSearch] = useState('');
 
     const handleAddProduct = (item) => {
         const toBeAddedKey = item.id;
@@ -45,7 +40,6 @@ const RestaurantDetails = () => {
         }
         setCart(newCart);
         setCartLength(newCart.length)
-        // addToDatabaseCart(item.id, count);
     }
     return (
         <div>
@@ -55,11 +49,11 @@ const RestaurantDetails = () => {
                     <div className="" >
                         <div className="d-flex flex-wrap flex-column justify-content-center align-items-center" style={{ width: '80vw' }}>
                             <img src={myRestaurant.restaurantLogo} alt="" className="img-fluid restaurantLogo" /><br />
-                            <h1>{myRestaurant.restaurantName}</h1>
+                            <h1><FontAwesomeIcon icon={faUtensils}></FontAwesomeIcon>&nbsp;{myRestaurant.restaurantName}</h1>
                             <div className="d-flex flex-wrap justify-content-center align-items-center">
-                                <h4>{myRestaurant.restaurantAddress}</h4> &nbsp;&nbsp;||&nbsp;&nbsp;
-                                <h4>Delivery Cost: {myRestaurant.restaurantDeliveryCost} BDT</h4> &nbsp;&nbsp;||&nbsp;&nbsp;
-                                <h4>Rating: {myRestaurant.restaurantRating}</h4>
+                                <h4><FontAwesomeIcon icon={faMapMarkerAlt}></FontAwesomeIcon>&nbsp;{myRestaurant.restaurantAddress}</h4> &nbsp;&nbsp;||&nbsp;&nbsp;
+                                <h4><FontAwesomeIcon icon={faShippingFast}></FontAwesomeIcon>&nbsp;Delivery Cost: {myRestaurant.restaurantDeliveryCost} BDT</h4> &nbsp;&nbsp;||&nbsp;&nbsp;
+                                <h4><FontAwesomeIcon icon={faStar}></FontAwesomeIcon>&nbsp;Rating: {myRestaurant.restaurantRating}</h4>
                             </div>
                         </div>
                         <h2 className="pt-5">Menu List:</h2>

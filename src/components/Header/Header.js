@@ -6,11 +6,7 @@ import { UserContext } from '../../App';
 import './Header.css';
 
 const Header = () => {
-    // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    //console.log('Header', loggedInUser);
-    const { value3, value2 } = useContext(UserContext)
-
-    const [cartOpen, setCartOpen] = value2;
+    const { value3 } = useContext(UserContext)
     const [cartLength, setCartLength] = value3;
     return (
         <div>

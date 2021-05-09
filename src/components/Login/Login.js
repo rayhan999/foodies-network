@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.css'
-import { CDBInput, CDBCard, CDBCardBody, CDBBtn, CDBLink, CDBContainer } from "cdbreact";
+import { CDBInput, CDBCard, CDBCardBody, CDBBtn, CDBContainer } from "cdbreact";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGoogle, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
@@ -33,15 +33,12 @@ const Login = () => {
                     <p className="text-center"> or sign in with</p>
                     <div className="row my-3 d-flex justify-content-center">
                         <CDBBtn className="socialBtn">
-                            {/* <CDBIcon fab icon="facebook-f" /> */}
                             <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                         </CDBBtn>
                         <CDBBtn className="socialBtn">
-                            {/* <CDBIcon fab icon="twitter" /> */}
                             <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
                         </CDBBtn>
                         <CDBBtn className="socialBtn">
-                            {/* <CDBIcon fab icon="google-plus-g" /> */}
                             <FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon>
                         </CDBBtn>
                     </div>
